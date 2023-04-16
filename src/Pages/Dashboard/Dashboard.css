@@ -48,7 +48,49 @@
   outline: none;
   background-color: transparent;
 }
+.containerSearch {
+  position: absolute;
+  width: 422px;
+  height: 61px;
+  right: 29px;
+  top: 65px;
+  background: #FFFFFF;
+  box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);
+  border-radius: 30px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+}
 
-.iconFilter {
+.containerLeft,
+.containerRight {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
 
+.containerRight {
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.containerLeft {
+  background: #F4F7FE;
+  border-radius: 49px;
+  height: 41px;
+  padding: 0 20px;
+  gap: 10px;
+}
+
+.containerLeft input {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.containerLeft input:focus {
+  outline: none;
 }
