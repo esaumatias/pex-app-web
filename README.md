@@ -18,4 +18,4 @@
 <ol>
   <li>Tela do Dashboard</li>
 </ol>
-<p>Confira o link do deploy do app web: <a href="https://pex-app-mxe0rijp9-esaumatias.vercel.app/">https://pex-app-mxe0rijp9-esaumatias.vercel.app/</a></p>
+<p>Confira o link do deploy do app web: <a href="https://pex-app-mxe0rijp9-esaumatias.vercel.app/">https://pex-app-web.vercel.app/</a></p>
