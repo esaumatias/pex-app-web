@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+.containerSideBar {
+  background-color: #FFFFFF;
+  width: 290px;
+  height: 100vh;
+}
+
+.selectedMenu path {
+  fill: #4318FF;
+}
+
+.selectedMenu {
+  border-right: 4px solid #4318FF;
+  margin-bottom: 15px;
+  height: 36px;
+}
+
+.notSelected {
+  margin-bottom: 15px;
+  height: 36px;
+}
+
+.containerListItens {
+  gap: 20px;
+}
+
+.iconMenu {
+  margin-left: 20px;
+}
+
+.textMenu {
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: #A3AED0;
+}
+
+.selectedTextMenu {
+  color: #2B3674;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+}
+
+.marginLeftSideBar {
+  margin-top: 20px;
+}
