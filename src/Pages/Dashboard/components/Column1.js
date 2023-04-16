@@ -5,69 +5,76 @@ import icon1 from "../../../Assets/Icon.svg";
 
 import "./Column1.css";
 
+const cards = [
+  {
+    icon: icon1,
+    title: 'R$ 312.321,00',
+    subtitle: 'Receita total',
+    bgColor: '#EC7A7A',
+    value: 'R$ 67,20',
+    valueSubtitle: 'Média por cliente',
+  },
+  {
+    icon: icon1,
+    title: 'R$ 74.421,00',
+    subtitle: 'Número de vendas',
+    bgColor: '#7A85EC',
+    value: 'R$ 42,30',
+    valueSubtitle: 'Média por cliente',
+  },
+  {
+    icon: icon1,
+    title: 'R$ 3,12',
+    subtitle: 'Lucro por venda',
+    bgColor: '#65D5AC',
+    value: 'R$ 12,40',
+    valueSubtitle: 'Média por cliente',
+  },
+  {
+    icon: null,
+    title: null,
+    subtitle: null,
+    bgColor: null,
+    value: null,
+    valueSubtitle: null,
+  }
+];
+
+
 const Column1 = () => {
   return (
     <div className="containerColumn1">
-      <div className="containerCard" style={{ backgroundColor: "#EC7A7A" }}>
-        <ReactSVG className="image" src={icon1} />
-        <div>
-          <div className="title" style={{ marginBottom: "10px" }}>
-            R$ 312.321,00
-          </div>
-          <div className="subtitle">Receita total</div>
+      {cards.map((card, index) => (
+        <div
+          key={index}
+          className={`containerCard ${index === 2 ? 'end' : (index === 1 ? 'center' : '')}`}
+          style={{ backgroundColor: card.bgColor, flex: index === 3 && 1 }}
+        >
+          {card.icon && <ReactSVG className="image" src={card.icon} />}
+          {card.title && (
+            <div>
+              <div className="title" style={{ marginBottom: "10px" }}>
+                {card.title}
+              </div>
+              <div className="subtitle">{card.subtitle}</div>
+            </div>
+          )}
+          <div className="line"></div>
+          {card.value && (
+            <div>
+              <div className="title" style={{ fontSize: "24px" }}>
+                {card.value}
+              </div>
+              <div className="subtitle" style={{ fontSize: "14px" }}>
+                {card.valueSubtitle}
+              </div>
+            </div>
+          )}
         </div>
-        <div className="line"></div>
-        <div>
-          <div className="title" style={{ fontSize: "24px" }}>
-            R$ 67,20
-          </div>
-          <div className="subtitle" style={{ fontSize: "14px" }}>
-            Média por cliente
-          </div>
-        </div>
-      </div>
-
-      <div className="containerCard center" style={{ backgroundColor: "#7A85EC" }}>
-        <ReactSVG className="image" src={icon1} />
-        <div>
-          <div className="title" style={{ marginBottom: "10px" }}>
-            R$ 74.421,00
-          </div>
-          <div className="subtitle">R$ 74.421,00</div>
-        </div>
-        <div className="line"></div>
-        <div>
-          <div className="title" style={{ fontSize: "24px" }}>
-            R$ 42,30
-          </div>
-          <div className="subtitle" style={{ fontSize: "14px" }}>
-            Média por cliente
-          </div>
-        </div>
-      </div>
-
-      <div className="containerCard end" style={{ backgroundColor: "#65D5AC" }}>
-        <ReactSVG className="image" src={icon1} />
-        <div>
-          <div className="title" style={{ marginBottom: "10px" }}>
-            R$ 3,12
-          </div>
-          <div className="subtitle">Lucro por venda</div>
-        </div>
-        <div className="line"></div>
-        <div>
-          <div className="title" style={{ fontSize: "24px" }}>
-            R$ 12,40
-          </div>
-          <div className="subtitle" style={{ fontSize: "14px" }}>
-            Média por cliente
-          </div>
-        </div>
-      </div>
-
-      <div className="containerCard" style={{ flex: 1 }}></div>
+      ))}
     </div>
   );
 };
+
 
 export default Column1;
