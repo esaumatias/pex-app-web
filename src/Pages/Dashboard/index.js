@@ -10,6 +10,7 @@ import Avatar from "../../Assets/Avatar.svg";
 import sinoIcon from "../../Assets/sinoIcon.svg";
 
 import Column1 from './components/Column1';
+import Column2 from './components/Column2';
 
 import "./Dashboard.css";
 
@@ -56,7 +57,7 @@ const Dashboard = () => {
         </div>
 
         <div style={{ flex: 1}}></div>
-
+          <Column2 />
         <div style={{ flex: 1}}></div>
 
         <div style={{ flex: 1}}></div>
