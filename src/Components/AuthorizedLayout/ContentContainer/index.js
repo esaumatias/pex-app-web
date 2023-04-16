@@ -12,7 +12,7 @@ export const ContentContainer = ({ children }) => (
         paddingTop: 5,
       }}
     >
-      <Container maxWidth="100%" sx={{ height: "85vh" }}>
+      <Container maxWidth="100%">
         {children}
       </Container>
     </Box>

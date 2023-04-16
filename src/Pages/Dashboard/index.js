@@ -11,6 +11,7 @@ import sinoIcon from "../../Assets/sinoIcon.svg";
 
 import Column1 from './components/Column1';
 import Column2 from './components/Column2';
+import Column3 from './components/Column3';
 
 import "./Dashboard.css";
 
@@ -45,7 +46,7 @@ const Dashboard = () => {
         </div>
         <div className="containerDate">
           <ReactSVG className="iconFilter" src={Vector2} />
-          <div className="subtitle" style={{ colo: "#8F9BBA" }}>
+          <div className="subtitle" style={{ color: "#8F9BBA" }}>
             Data Final
           </div>
         </div>
@@ -56,10 +57,14 @@ const Dashboard = () => {
           <Column1 />
         </div>
 
-        <div style={{ flex: 1}}></div>
+        <div style={{ flex: 1}}>
           <Column2 />
-        <div style={{ flex: 1}}></div>
-
+        </div>
+          
+        <div style={{ flex: 1}}>
+          <Column3 />
+        </div>
+          
         <div style={{ flex: 1}}></div>
       </div>
     </AuthorizedLayout>
