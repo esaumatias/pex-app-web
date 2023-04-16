@@ -74,7 +74,7 @@
 
 .containerRight {
   justify-content: flex-end;
-  gap: 30px;
+  gap: 25px;
 }
 
 .containerLeft {
@@ -93,4 +93,9 @@
 
 .containerLeft input:focus {
   outline: none;
+}
+
+.containerInfo {
+  flex: 1;
+  /* background-color: red; */
 }

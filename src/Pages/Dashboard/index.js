@@ -9,6 +9,8 @@ import Search from "../../Assets/Search Icon.svg";
 import Avatar from "../../Assets/Avatar.svg";
 import sinoIcon from "../../Assets/sinoIcon.svg";
 
+import Column1 from './components/Column1';
+
 import "./Dashboard.css";
 
 const Dashboard = () => {
@@ -17,7 +19,7 @@ const Dashboard = () => {
       <div className="containerSearch">
         <div className="containerLeft">
           <ReactSVG className="iconFilter" src={Search} />
-          <input type="text" placeholder="Buscar"/>
+          <input type="text" placeholder="Buscar" />
         </div>
 
         <div className="containerRight">
@@ -33,7 +35,7 @@ const Dashboard = () => {
       <div className="title">Velty Dashboard</div>
 
       <div className="containerFilter">
-        <div>Filtrar por data</div>
+        <div className="subtitle">Filtrar por data</div>
         <div className="containerDate">
           <ReactSVG className="iconFilter" src={Vector2} />
           <div className="subtitle" style={{ colo: "#8F9BBA" }}>
@@ -46,6 +48,18 @@ const Dashboard = () => {
             Data Final
           </div>
         </div>
+      </div>
+
+      <div className="containerInfo">
+        <div style={{ flex: 1}}>
+          <Column1 />
+        </div>
+
+        <div style={{ flex: 1}}></div>
+
+        <div style={{ flex: 1}}></div>
+
+        <div style={{ flex: 1}}></div>
       </div>
     </AuthorizedLayout>
   );
