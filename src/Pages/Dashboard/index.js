@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { ReactSVG } from "react-svg";
 import { AuthorizedLayout } from "../../Components/AuthorizedLayout";
 
@@ -9,9 +9,10 @@ import Search from "../../Assets/Search Icon.svg";
 import Avatar from "../../Assets/Avatar.svg";
 import sinoIcon from "../../Assets/sinoIcon.svg";
 
-import Column1 from './components/Column1';
-import Column2 from './components/Column2';
-import Column3 from './components/Column3';
+import Row1 from './components/Row1';
+import Row2 from './components/Row2';
+import Row3 from './components/Row3';
+import Row4 from './components/Row4';
 
 import "./Dashboard.css";
 
@@ -54,18 +55,20 @@ const Dashboard = () => {
 
       <div className="containerInfo">
         <div style={{ flex: 1}}>
-          <Column1 />
+          <Row1 />
         </div>
 
         <div style={{ flex: 1}}>
-          <Column2 />
+          <Row2 />
         </div>
           
         <div style={{ flex: 1}}>
-          <Column3 />
+          <Row3 />
         </div>
           
-        <div style={{ flex: 1}}></div>
+        <div style={{ flex: 1}}>
+          <Row4 />
+        </div>
       </div>
     </AuthorizedLayout>
   );

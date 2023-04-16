@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Column2.css";
+import "./Row2.css";
 
 const data = [
   {
@@ -35,9 +35,9 @@ const data = [
   },
 ];
 
-const Column2 = () => {
+const Row2 = () => {
   return (
-    <div className="containerColumn2">
+    <div className="containerRow2">
       {data.map((item, idx) => (
         <div className="containerCard" key={idx}>
           <div className="subtitle">{item.title}</div>
@@ -59,4 +59,4 @@ const Column2 = () => {
   );
 };
 
-export default Column2;
+export default Row2;

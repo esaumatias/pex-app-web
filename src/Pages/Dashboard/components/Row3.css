@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+.containerRow3 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 20px;
+  margin-top: 22px;
+}
+
+.containerRow3 .containerCard {
+  height: 196px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 20px 0;
+  background: #FFFFFF;
+}
+
+
+.containerRow3 .containerCard .image {
+  margin-left: 16px;
+}
+
+.containerRow3 .containerCard .image path {
+  fill: #4318FF;
+}
+
+.containerRow3 .containerCard .image circle {
+  fill: #F4F7FE;
+}
+
+.containerRow3 .containerCard .title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 32px;
+  color: #2B3674;
+  margin-left: 16px;
+}
+
+.containerRow3 .containerCard .subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #A3AED0;
+  margin-left: 16px;
+}
+
+.containerRow3 .containerCard .subtitlPerfil2 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #05CD99;
+  margin-left: 16px;
+}
+

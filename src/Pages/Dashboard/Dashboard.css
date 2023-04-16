@@ -30,6 +30,7 @@
   margin-top: 30px;
   box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);
   border-radius: 30px;
+  margin-bottom: 20px;
 }
 
 .containerDate {
@@ -97,5 +98,10 @@
 
 .containerInfo {
   flex: 1;
-  overflow: hidden;
+  overflow: auto;
+  height: 75vh;
+}
+
+.containerInfo::-webkit-scrollbar {
+  display:none;
 }

@@ -3,12 +3,7 @@
 .containerSideBar {
   background-color: #FFFFFF;
   width: 290px;
-  height: 100vh;
-  overflow: auto;
-}
-
-.containerSideBar::-webkit-scrollbar {
-  display:none;
+  min-height: 95vh;
 }
 
 .selectedMenu path {

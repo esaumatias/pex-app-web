@@ -3,7 +3,7 @@ import { ReactSVG } from "react-svg";
 
 import icon1 from "../../../Assets/Icon.svg";
 
-import "./Column3.css";
+import "./Row3.css";
 
 const cards = [
   {
@@ -32,9 +32,9 @@ const cards = [
   },
 ];
 
-const Column3 = () => {
+const Row3 = () => {
   return (
-    <div className="containerColumn3">
+    <div className="containerRow3">
       {cards.map((card, index) => (
         <div key={index} className="containerCard">
           <ReactSVG className="image" src={card.icon} />
@@ -55,4 +55,4 @@ const Column3 = () => {
   );
 };
 
-export default Column3;
+export default Row3;

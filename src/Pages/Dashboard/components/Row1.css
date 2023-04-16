@@ -1,47 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
-.containerColumn2 {
+.containerRow1 {
   font-family: 'DM Sans';
   font-style: normal;
   display: flex;
   align-items: center;
   flex: 1;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
-.containerColumn2 .containerCard {
-  height: 95px;
+.containerRow1 .containerCard {
+  height: 310px;
   flex: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 20px;
   padding: 20px 0;
+}
+
+.containerRow1 .containerCard .line {
+  width: 100%;
   background-color: #FFFFFF;
+  height: 1px;
 }
 
+.containerRow1 .containerCard .image {
+  margin-left: 16px;
+}
 
-.containerColumn2 .containerCard .title {
+.containerRow1 .containerCard .title {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 48px;
   line-height: 32px;
+  color: #FFFFFF;
   margin-left: 16px;
-  color: #2B3674;
 }
 
-.containerColumn2 .containerCard .subtitle {
+.containerRow1 .containerCard .subtitle {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 24px;
   line-height: 24px;
-  color: #A3AED0;
+  color: rgba(255, 255, 255, 0.7);
   margin-left: 16px;
 }
 
-.containerColumn2 .containerCard .subtitlePerfil2 {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 20px;
-  color: #05CD99;
-  margin-left: 16px;
+.center path {
+  fill: #7A85EC;
+}
+
+.end path {
+  fill: #65D5AC;
 }
